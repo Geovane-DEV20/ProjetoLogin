@@ -1,7 +1,7 @@
 ﻿
 namespace ProjetoLogin.Apresentacao
 {
-    partial class Cadastre_se
+    partial class Cadastrese
     {
         /// <summary>
         /// Required designer variable.
@@ -105,7 +105,7 @@ namespace ProjetoLogin.Apresentacao
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             // 
-            // Cadastre_se
+            // Cadastrese
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +118,7 @@ namespace ProjetoLogin.Apresentacao
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Cadastre_se";
+            this.Name = "Cadastrese";
             this.Text = "Cadastre_se";
             this.ResumeLayout(false);
             this.PerformLayout();

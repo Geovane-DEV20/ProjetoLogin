@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoLogin.Apresentacao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,14 +23,20 @@ namespace ProjetoLogin
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnCadastrese_Click(object sender, EventArgs e)
         {
-
+            Cadastrese cad = new Cadastrese();
+            cad.Show(); // Irá chamar o formulário de Cadastro       
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); // Irá fechar formulário
         }
     }
 }

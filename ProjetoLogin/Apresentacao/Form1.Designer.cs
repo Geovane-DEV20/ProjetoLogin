@@ -59,6 +59,7 @@ namespace ProjetoLogin
             this.btnSair.TabIndex = 2;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // lblLogin
             // 
@@ -116,7 +117,7 @@ namespace ProjetoLogin
             this.btnCadastre.TabIndex = 8;
             this.btnCadastre.Text = "CADASTRE-SE";
             this.btnCadastre.UseVisualStyleBackColor = true;
-            this.btnCadastre.Click += new System.EventHandler(this.button3_Click);
+            this.btnCadastre.Click += new System.EventHandler(this.btnCadastrese_Click);
             // 
             // Form1
             // 

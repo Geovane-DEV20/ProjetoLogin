@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoLogin.Apresentacao
 {
-    public partial class Cadastre_se : Form
+    public partial class Cadastrese : Form
     {
-        public Cadastre_se()
+        public Cadastrese()
         {
             InitializeComponent();
         }
