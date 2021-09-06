@@ -47,7 +47,7 @@ namespace ProjetoLogin.Apresentacao
             this.label1.Size = new System.Drawing.Size(51, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            //this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -58,7 +58,7 @@ namespace ProjetoLogin.Apresentacao
             this.label2.Size = new System.Drawing.Size(51, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Senha";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            //this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -69,7 +69,7 @@ namespace ProjetoLogin.Apresentacao
             this.label3.Size = new System.Drawing.Size(129, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Confirmar Senha";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            //this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtbLogin
             // 
@@ -104,6 +104,7 @@ namespace ProjetoLogin.Apresentacao
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // Cadastrese
             // 

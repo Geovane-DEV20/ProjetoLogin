@@ -1,6 +1,8 @@
-﻿using System;
+﻿using ProjetoLogin.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.SqlClient;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -17,19 +19,19 @@ namespace ProjetoLogin.Apresentacao
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            Controle controle = new Controle();
+            String mensagem = controle.cadastrar(txtbLogin.Text, txtbSenha.Text, txtbConfirmarSenha.Text);
+            if(controle.tem)// mensagem de sucesso
+            {
+                MessageBox.Show(mensagem, "Cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            }
+            else
+            {
+                MessageBox.Show(controle.mensagem); //Mensagem de erro
+            }
         }
     }
 }

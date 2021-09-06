@@ -89,7 +89,6 @@ namespace ProjetoLogin
             this.textbLogin.Name = "textbLogin";
             this.textbLogin.Size = new System.Drawing.Size(164, 20);
             this.textbLogin.TabIndex = 5;
-            //this.textbLogin.TextChanged += new System.EventHandler(this.textbLogin_TextChanged);
             // 
             // textbSenha
             // 
@@ -99,7 +98,6 @@ namespace ProjetoLogin
             this.textbSenha.PasswordChar = '*';
             this.textbSenha.Size = new System.Drawing.Size(163, 22);
             this.textbSenha.TabIndex = 6;
-            //this.textbSenha.TextChanged += new System.EventHandler(this.textbSenha_TextChanged);
             // 
             // pictureBox1
             // 

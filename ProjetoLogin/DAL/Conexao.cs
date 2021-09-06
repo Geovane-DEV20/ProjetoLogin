@@ -13,6 +13,7 @@ namespace ProjetoLogin.DAL
         public Conexao()
         {
             con.ConnectionString = @"Data Source=LAPTOP-ARD2JAJN;Initial Catalog=ProjetoLogin;Integrated Security=True";
+            //Data Source = LAPTOP - ARD2JAJN; Initial Catalog = ProjetoLogin; Integrated Security = True
         }
         public SqlConnection conectar()
         {

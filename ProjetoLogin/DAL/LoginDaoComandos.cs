@@ -30,6 +30,8 @@ namespace ProjetoLogin.DAL
                 {
                     tem = true;
                 }
+                con.desconectar();
+                dr.Close();
             }
             catch (SqlException)
             {
@@ -40,7 +42,32 @@ namespace ProjetoLogin.DAL
 
         public String cadastrar(String email, String senha, String confsenha)
         {
+            tem = false;
             //comando para inserir
+            if(senha.Equals(confsenha))
+            {
+                cmd.CommandText = "insert into logins values (@e,@s);";
+                cmd.Parameters.AddWithValue("@e", email);
+                cmd.Parameters.AddWithValue("@s", senha);
+
+                try
+                {
+                    cmd.Connection = con.conectar();
+                    cmd.ExecuteNonQuery();
+                    con.desconectar();
+                    this.mensagem = "Cadastrado com sucesso";
+                    tem = true;
+
+                }
+                catch (SqlException)
+                {
+                    this.mensagem = "Erro com Banco de Dados";
+                }
+
+            }else
+            {
+                this.mensagem = "Senhas não correspondem!";
+            }
             return mensagem;
         }
     }
