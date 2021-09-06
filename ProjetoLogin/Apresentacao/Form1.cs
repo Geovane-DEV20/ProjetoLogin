@@ -1,4 +1,5 @@
 ﻿using ProjetoLogin.Apresentacao;
+using ProjetoLogin.Modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,6 +38,29 @@ namespace ProjetoLogin
         private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit(); // Irá fechar formulário
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            Controle controle = new Controle();
+            controle.acessar(textbLogin.Text, textbSenha.Text);
+
+            if (controle.mensagem.Equals(""))
+            {
+                if (controle.tem)
+                {
+                    MessageBox.Show("Logado com sucesso", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    BemVindo bv = new BemVindo();
+                    bv.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Login não encontrado, verifique login e senha", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            } else
+            {
+                MessageBox.Show(controle.mensagem);
+            }
         }
     }
 }

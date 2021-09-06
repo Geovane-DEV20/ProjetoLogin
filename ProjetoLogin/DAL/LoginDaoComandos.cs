@@ -10,7 +10,7 @@ namespace ProjetoLogin.DAL
     class LoginDaoComandos
     {
         public bool tem = false;
-        public String mensagem;
+        public String mensagem = "";
         SqlCommand cmd = new SqlCommand();
         Conexao con = new Conexao();
         SqlDataReader dr;
@@ -18,7 +18,7 @@ namespace ProjetoLogin.DAL
         {
             
             //procurar no banco, login e senha
-            cmd.CommandText = "select * from nomeDaTabela where email = @login and senha = @senha";
+            cmd.CommandText = "select * from logins where email = @login and senha = @senha";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
             

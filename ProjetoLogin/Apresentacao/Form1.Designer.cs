@@ -43,17 +43,18 @@ namespace ProjetoLogin
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(237, 137);
+            this.btnEntrar.Location = new System.Drawing.Point(229, 123);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 23);
             this.btnEntrar.TabIndex = 1;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseMnemonic = false;
             this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(325, 137);
+            this.btnSair.Location = new System.Drawing.Point(317, 123);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 2;
@@ -65,7 +66,7 @@ namespace ProjetoLogin
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(173, 56);
+            this.lblLogin.Location = new System.Drawing.Point(165, 42);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(57, 23);
             this.lblLogin.TabIndex = 3;
@@ -76,7 +77,7 @@ namespace ProjetoLogin
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(168, 94);
+            this.lblSenha.Location = new System.Drawing.Point(160, 80);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(63, 23);
             this.lblSenha.TabIndex = 4;
@@ -84,24 +85,26 @@ namespace ProjetoLogin
             // 
             // textbLogin
             // 
-            this.textbLogin.Location = new System.Drawing.Point(237, 59);
+            this.textbLogin.Location = new System.Drawing.Point(229, 45);
             this.textbLogin.Name = "textbLogin";
             this.textbLogin.Size = new System.Drawing.Size(164, 20);
             this.textbLogin.TabIndex = 5;
+            //this.textbLogin.TextChanged += new System.EventHandler(this.textbLogin_TextChanged);
             // 
             // textbSenha
             // 
             this.textbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbSenha.Location = new System.Drawing.Point(237, 97);
+            this.textbSenha.Location = new System.Drawing.Point(229, 83);
             this.textbSenha.Name = "textbSenha";
             this.textbSenha.PasswordChar = '*';
             this.textbSenha.Size = new System.Drawing.Size(163, 22);
             this.textbSenha.TabIndex = 6;
+            //this.textbSenha.TextChanged += new System.EventHandler(this.textbSenha_TextChanged);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(121, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -111,7 +114,7 @@ namespace ProjetoLogin
             // btnCadastre
             // 
             this.btnCadastre.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastre.Location = new System.Drawing.Point(237, 178);
+            this.btnCadastre.Location = new System.Drawing.Point(229, 164);
             this.btnCadastre.Name = "btnCadastre";
             this.btnCadastre.Size = new System.Drawing.Size(163, 32);
             this.btnCadastre.TabIndex = 8;
@@ -124,7 +127,7 @@ namespace ProjetoLogin
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(476, 261);
+            this.ClientSize = new System.Drawing.Size(421, 230);
             this.Controls.Add(this.btnCadastre);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textbSenha);
