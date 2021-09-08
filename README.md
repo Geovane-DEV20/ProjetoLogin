@@ -1,1 +1,1 @@
-Sistema de login e senha utilizando linguaguem C# e SqlServer.
+Sistema de login e senha utilizando C# e SQL Server.
